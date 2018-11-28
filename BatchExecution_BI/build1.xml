@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<project name="BatchExecution_BI" default="run" basedir=".">  
+	<property name="jar.lib.dir" value="./libs"/>
+	<property name="src.dir" value="./src"/>
+	<property name="class.dir" value="./bin"/>
+	<property name="jar.dir" value="./SAF1.jar" /> 	
+
+	<path id="classpath_jars">
+        <fileset dir="${jar.lib.dir}">
+            <include name="**/*.jar"/>
+        </fileset> 
+    </path>
+	
+	
+	<target name="compile" >
+		<echo>Please Wait - Compiling test Lib...</echo>
+        	<javac includeantruntime="false" debug="true" srcdir="${src.dir}" destdir="${class.dir}"  classpathref="classpath_jars"/>
+   	 </target>
+    
+    <target name="makeJar" depends="compile">
+        
+	<manifestclasspath property="mf.classpath" jarfile="${jar.dir}">
+		<classpath>
+			<fileset dir="${jar.lib.dir}" includes="*.jar"/>
+		</classpath>
+	</manifestclasspath>
+		
+	<jar destfile="${jar.dir}" basedir="${class.dir}">
+		 <manifest>
+               		<attribute name="Main-Class" value="EncryptionModule.Password_Encryption"/>
+			<attribute name="Class-Path" value="${mf.classpath}"/>
+        	 </manifest>
+        </jar>
+    </target>
+	
+    <target name="run" depends="makeJar">
+		
+		<java jar="${jar.dir}" fork="yes" classpathref="classpath_jars">
+         	<classpath>
+                   	<pathelement path="${java.class.path}"/> 
+         	</classpath>
+        </java>
+    </target>
+
+
+</project>

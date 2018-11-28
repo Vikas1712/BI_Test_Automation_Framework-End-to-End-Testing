@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7298" started-at="2018-11-03T17:50:57Z" finished-at="2018-11-03T17:51:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7298" started-at="2018-11-03T17:50:57Z" finished-at="2018-11-03T17:51:04Z">
+      <class name="Modules.Diesel.BI.TestClass">
+        <test-method status="PASS" signature="test()[pri:0, instance:Modules.Diesel.BI.TestClass@69ea3742]" name="test" duration-ms="7266" started-at="2018-11-03T18:50:57Z" finished-at="2018-11-03T18:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- Modules.Diesel.BI.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
