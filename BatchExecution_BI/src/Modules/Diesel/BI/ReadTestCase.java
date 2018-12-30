@@ -12,7 +12,9 @@ import java.util.List;
 import java.util.Map;
 import EncryptionModule.Encryption;
 import FunctionLibrary.ExcelDataPoolManager;
-
+/*
+ * @Author : VIKAS YADAV	
+ */
 
 
 public class ReadTestCase {
@@ -46,11 +48,11 @@ public class ReadTestCase {
 				}
 				String Evnr = objEDPM.getValueByKey (aModulesList.entrySet (), "Environment");
 				if(Evnr.equalsIgnoreCase("Development")) {
-					connurl="jdbc:teradata://acctera.ux.nl.tmo";
+					connurl="Your Developnment Evnr Address";
 				}else if(Evnr.equalsIgnoreCase("Acceptance")) {
-					connurl="jdbc:teradata://acctera.ux.nl.tmo";
+					connurl="Your Test Evnr Address";
 				}else {
-					connurl="jdbc:teradata://acctera.ux.nl.tmo";
+					connurl="Your Acceptance Evnr Address";
 				}
 				conn=DriverManager.getConnection(connurl, teraUser,encrpt.decrypt(teraPassword) );	
 				System.out.println("\n User " + teraUser + " connected.");

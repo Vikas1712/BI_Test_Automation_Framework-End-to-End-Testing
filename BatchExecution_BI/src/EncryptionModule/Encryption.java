@@ -1,5 +1,5 @@
 /*
- * @Author : VIKAS YADAV
+* @Author : VIKAS YADAV
  */
 package EncryptionModule;
 
@@ -14,7 +14,9 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESedeKeySpec;
 import org.apache.commons.codec.binary.Base64;
-
+/*
+ * @Author : VIKAS YADAV	
+ */
 public class Encryption {
 	
 	private static final String UNICODE_FORMAT = "UTF8";

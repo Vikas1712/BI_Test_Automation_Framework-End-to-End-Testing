@@ -6,9 +6,8 @@ package FunctionLibrary;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/**
- * @author z003rpat
- *
+/*
+ * @Author : VIKAS YADAV	
  */
 public class CmdRunner {
 

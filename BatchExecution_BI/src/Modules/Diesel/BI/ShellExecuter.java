@@ -13,7 +13,9 @@ import com.jcraft.jsch.Session;
 
 import EncryptionModule.Encryption;
 import FunctionLibrary.ExcelDataPoolManager;
-
+/*
+ * @Author : VIKAS YADAV	
+ */
 public class ShellExecuter {
 	
 	private static ExcelDataPoolManager objEDPM=new ExcelDataPoolManager();
@@ -21,7 +23,7 @@ public class ShellExecuter {
 	 
 	private static String USERNAME; // username for remote host
 	private static String PASSWORD; // password of the remote host
-	private static String host = "devpwc01.ux.nl.tmo"; // remote host address
+	private static String host = "remotehostaddress"; // remote host address
 	private static int port=22;
 	private static String InformaticaUserName;// Informatica Username read from config file
 	private static String InformaticaPassword;// Informatica Password read from config file

@@ -1,9 +1,8 @@
 package Modules.Diesel.BI;
 
 import java.util.ArrayList;
-
 /*
- * Just a small test class that shows how the ConsoleTable class works
+ * @Author : VIKAS YADAV	
  */
 
 public class ConsoleTableTester{
